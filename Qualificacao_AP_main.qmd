@@ -1,0 +1,50 @@
+---
+title: Transporte Quântico em Redes Multi-hierárquicas []{.universidade} []{.programa} []{.capes}
+institute:
+    - Universidade Federal do Amazonas
+    - Pró-Reitoria de Pesquisa e Pós-Graduação
+    - Programa de Pós-Graduação em Física
+author:
+    - "Geyson Maquiné Batalha <br> <br> Orientador: Dr. Mircea Daniel Galicenau"
+    
+bibliography: ref.bib
+csl: abnt.csl
+format: 
+    revealjs:
+        slide-number: c/t
+        theme: [tema.scss]
+        width: 1600
+        height: 900
+        fig-cap-location: top
+        code-fold: true
+        margin: 0
+---
+
+
+
+## Roteiro
+
+- Motivação
+- Grafos e Matriz Laplaciana
+- Rede Multicamada DSGRSD
+- Espectro de Autovalores
+- Caminhadas Aleatórias de Tempo Contínuo (CTRW)
+- Caminhadas Quânticas de Tempo Contínuo (CTQW)
+- Procedimentos
+- Resultados Parciais 
+- Considerações Finais
+
+
+
+{{< include _motivacao.qmd >}}
+{{< include _grafos.qmd >}}
+{{< include _rede_multi.qmd >}}
+{{< include _espectro.qmd >}}
+{{< include _CTRW.qmd >}}
+{{< include _CTQW.qmd >}}
+{{< include _procedimentos.qmd >}}
+{{< include _resultados.qmd >}}
+{{< include _consideracao_final.qmd >}}
+{{< include _cronograma.qmd >}}
+
+## Referências

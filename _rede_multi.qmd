@@ -1,0 +1,47 @@
+## Rede Multicamada DSGRSD
+
+
+
+
+::: {.columns}
+::: {.column}
+### Dendrímeros
+
+![](img/dendrimero.svg){fig-align="center"}
+
+- Número total de nós:
+
+$$N_d=3 \cdot(2^{g_d}-1)+1$$
+:::
+::: {.column}
+### Fractal Dual Sierpinski Gasket
+
+![](img/fractal_dual.svg){fig-align="center"}
+
+
+- Número total de nós:
+
+$$N_s=3^{g_s}$$
+:::
+::: 
+
+
+## Rede Multicamada DSGRSD
+
+![Representação dos passos da construção da rede multicamada DSGRSD (Dual Sierpinski Gasket replicado na forma de dendrímero) na geração ($g_s=2$, $g_d=1$, $L=3$).](img/rede_multi.svg){height=550px  fig-align="center"}
+
+::: {.columns}
+::: {.column}
+- Número de nós da Rede Multi-hierárquica
+
+
+$$N=N_s\cdot N_d=3^{g_s}\cdot (3\cdot2^{g_d}-2)$$
+:::
+::: {.column}
+
+- Número de nós da Rede Multicamada
+$$N_L=3^{g_s}\cdot (3\cdot2^{g_d}-2)\cdot L$$
+:::
+::: 
+
+
