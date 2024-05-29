@@ -44,6 +44,33 @@ Fonte: @Qiang2024.^[QIANG, X.; MA, S.; SONG, H. Review on quantum walk computing
 ![](img/artigos_Relaciodos.svg){height=600px fig-align="center"}
 
 ## Motivação
+
+### Redes Multi-hierárquicas
+
+
+
+:::: {.columns}
+::: {.column style="text-align:center; font-size:25px;"}
+
+
+
+![Fractal Hexagonal](img/hexa_sierpinski.png){width=500px fig-align="center"}
+
+Fonte: @jurjiu2016relaxation.^[JURJIU, Aurel et al. Relaxation dynamics of Sierpinski hexagon fractal polymer: Exact analytical results in the Rouse-type approach and numerical results in the Zimm-type approach. The Journal of Chemical Physics, v. 145, n. 21, 2016.]
+
+
+
+
+:::
+::: {.column style="text-align:center; font-size:25px;"}
+![Fractal Dual Sierpinski Gasket replicado em forma de dendrímero](img/dual_sierpinski.png){width=500px fig-align="center"}
+
+Fonte: @Jurjiu_2017.^[JURJIU, A.; BITER, T.-L.; TURCU, F. Dynamics of a polymer network based on dual sierpinski gasket and dendrimer: A theoretical approach. Polymers, v. 9, n. 7, p. 245, Jun. 2017.]
+
+:::
+::::
+
+## Motivação
 ### Objetivo Geral
 
 - Avaliar a eficiência do transporte quântico na rede multicamada Dual Sierpinski Gasket replicado em forma de dendrímero (DSGRSD).
