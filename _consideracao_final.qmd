@@ -1,1 +1,13 @@
 ## Considerações Finais
+
+- O aumento da geração do fractal é um fator determinante para a melhora dos transportes clássico e quântico.
+
+- A ordem da eficiência do transporte foram semelhantes no caso clássico e quântico.
+
+- A geração ($g_s=2$, $g_d=2$, $L=2$) teve o melhor transporte e  ($g_s=1$, $g_d=3$, $L=1$) o pior. 
+
+- A alta degenerecência do fractal contribuiu para que os limites inferiores se aproximem de $\bar{\chi}$.
+
+- Mesmo com as variações  dos autolovares da matriz Laplaciana e os analíticos, o desempenho  de cada transporte foi semelhante.  
+
+- Posteriormente, veremos os efeitos de localização através de $\pi_{a,b}$, e também, vamos avaliar se a remoção de arestas especificas entre as camadas melhoram o desempenho transporte.

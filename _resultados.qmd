@@ -1,1 +1,59 @@
 ## Resultados Parciais
+
+
+### Probabilidade Média de Retorno
+
+
+:::{.panel-tabset}
+
+### Clássico
+:::{style="font-size:20px;"}
+Gráficos da probabilidade média de retorno $\bar{p}(t)$ para uma caminhada aleatória clássica. No limite ao longo do tempo, a probabilidade decai  no valor de equipartição $1/N$, no qual o valor de $N$ para as gerações ($g_s=3$, $g_d=1$, $L=1$), ($g_s=1$, $g_d=3$, $L=1$), ($g_s=1$, $g_d=1$, $L=3$), ($g_s=2$, $g_d=2$, $L=2$) serão respectivamente 108, 66, 36 e 180. A direta, temos os resultados oriundos dos autovalores da matriz Laplaciana e na esquerda são obtidos analiticamente.
+:::
+:::: {.columns}
+::: {.column}
+![](img/prob_classica_laplaciana.jpg){width=900px fig-align="center"}
+:::
+::: {.column}
+![](img/prob_classica_analitica.jpg){width=900px fig-align="center"}
+:::
+::::
+
+### Quântico
+:::{style="font-size:20px;"}
+Gráficos da probabilidade média de retorno quântico $\bar{\pi}(t)$ e seu limite inferior $|\bar{\alpha}(t)|^2$.
+:::
+:::: {.columns}
+::: {.column}
+![](img/prob_quantica_laplaciana.jpg){width=900px fig-align="center"}
+:::
+::: {.column}
+![](img/prob_quantica_analitica.jpg){width=900px fig-align="center"}
+:::
+::::
+:::
+
+
+## Resultados Parciais
+
+### Eficiência do Transporte
+:::{style="font-size:20px;"}
+Representação gráfica do valor médio $\bar{\chi}$ referente ao espectro da matriz Laplaciana e o limite inferior $\bar{\chi}^*$ com os autovalores analíticos.
+:::
+
+![](img/valor_medio.jpg){width=300px fig-align="center"}
+
+## Resultados Parciais
+
+
+### Espectro de Autovalores
+
+
+:::: {.columns}
+::: {.column}
+![](img/autovalores_espectro_laplaciano.jpg){width=100em fig-align="center"}
+:::
+::: {.column}
+![](img/autovalores_espectro_analitico.jpg){width=100em fig-align="center"}
+:::
+::::

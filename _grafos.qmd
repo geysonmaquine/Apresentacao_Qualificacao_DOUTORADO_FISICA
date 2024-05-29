@@ -1,1 +1,31 @@
 ## Grafos e Matriz Laplaciana
+
+:::: {.columns}
+::: {.column}
+![](img/grafo.svg){height=400px fig-align="center"}
+
+- Elementos da Matriz Laplaciana $\mathbf{L}$
+
+$$\small L_{ij} =\begin{cases}
+		\;\;k_i, & i=j, \\
+		-1,&\text{se } i \neq j \text{ e ocorrer ligação entre os vértices } i \text{ e } j ,\\
+		\;\;\;0,& \text{caso contrário}.\end{cases}$$
+
+Obs.: também pode ser chamada de Matriz Conectividade $\mathbf{A}$.
+:::
+::: {.column}
+
+- Grafo Estrela 
+
+$$\mathbf{L}=\begin{pmatrix}1&-1&0&0\\
+-1&3&-1&-1\\
+0&-1&1&0\\
+0&-1&0&1\\\end{pmatrix}$$
+
+- Grafo Triangular
+
+$$\mathbf{L}=\begin{pmatrix} 2&-1&-1\\
+-1&2&-1\\
+-1&-1&2\\\end{pmatrix}$$
+:::
+::::

@@ -10,7 +10,7 @@
 <link href="Qualificacao_AP_main_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.553">
 
-  <meta name="author" content="Geyson Maquiné Batalha     Orientador: Dr.&nbsp;Mircea Daniel Galicenau">
+  <meta name="author" content="Geyson Maquiné Batalha     Orientador: Dr.&nbsp;Mircea Daniel Galiceanu">
   <title>Transporte Quântico em Redes Multi-hierárquicas   </title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,11 +29,32 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="Qualificacao_AP_main_files/libs/revealjs/dist/theme/quarto.css">
   <link href="Qualificacao_AP_main_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="Qualificacao_AP_main_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="Qualificacao_AP_main_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Qualificacao_AP_main_files/libs/revealjs/plugin/reveal-pointer/pointer.css" rel="stylesheet">
   <link href="Qualificacao_AP_main_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -331,7 +352,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Geyson Maquiné Batalha <br> <br> Orientador: Dr.&nbsp;Mircea Daniel Galicenau 
+Geyson Maquiné Batalha <br> <br> Orientador: Dr.&nbsp;Mircea Daniel Galiceanu 
 </div>
         <p class="quarto-title-affiliation">
             Universidade Federal do Amazonas
@@ -353,8 +374,7 @@ Geyson Maquiné Batalha <br> <br> Orientador: Dr.&nbsp;Mircea Daniel Galicenau
 <li>Grafos e Matriz Laplaciana</li>
 <li>Rede Multicamada DSGRSD</li>
 <li>Espectro de Autovalores</li>
-<li>Caminhadas Aleatórias de Tempo Contínuo (CTRW)</li>
-<li>Caminhadas Quânticas de Tempo Contínuo (CTQW)</li>
+<li>Medidas de Probabilidade</li>
 <li>Procedimentos</li>
 <li>Resultados Parciais</li>
 <li>Considerações Finais</li>
@@ -362,14 +382,109 @@ Geyson Maquiné Batalha <br> <br> Orientador: Dr.&nbsp;Mircea Daniel Galicenau
 </section>
 <section id="motivação" class="slide level2">
 <h2>Motivação</h2>
-<p>asdaaff</p>
+<h3 id="redes-de-transporte">Redes de Transporte</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/redes_transporte.svg" class="quarto-figure quarto-figure-center" height="700"></p>
+</figure>
+</div>
 </section>
 <section id="motivação-1" class="slide level2">
 <h2>Motivação</h2>
-<p>dsdsd</p>
+<h3 id="modelo-de-caminhadas">Modelo de Caminhadas</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/caminhadas.svg" class="quarto-figure quarto-figure-center" height="450"></p>
+</figure>
+</div>
+<h4 id="caminhadas-quânticas">Caminhadas Quânticas</h4>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Tempo Discreto
+<ul>
+<li><span class="citation" data-cites="Aharonov_1993">Aharonov, Davidovich, and Zagury (<a href="#/referências" role="doc-biblioref" onclick="">1993</a>)</span></li>
+<li>Espaço moeda e Espaço posição</li>
+</ul></li>
+</ul>
+</div><div class="column">
+<ul>
+<li>Tempo Contínuo
+<ul>
+<li><span class="citation" data-cites="Farhi_1998">Farhi and Gutmann (<a href="#/referências" role="doc-biblioref" onclick="">1998</a>)</span></li>
+<li><span class="math inline">\(U(t)=e^{-i\mathbf{H}t}\)</span></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="motivação-2" class="slide level2">
+<h2>Motivação</h2>
+<h3 id="aplicações">Aplicações</h3>
+<div style="text-align:center; font-size:25px;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/QW_app.png" class="quarto-figure quarto-figure-center" height="600"></p>
+</figure>
+</div>
+<p>Fonte: <span class="citation" data-cites="Qiang2024">Qiang, Ma, and Song (<a href="#/referências" role="doc-biblioref" onclick="">2024</a>)</span>.<sup>1</sup></p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>QIANG, X.; MA, S.; SONG, H. Review on quantum walk computing: Theory, implementation, and application. 2024</p></li></ol></aside></section>
+<section id="motivação-3" class="slide level2">
+<h2>Motivação</h2>
+<h3 id="trabalhos-relacionados">Trabalhos Relacionados<sup>1</sup> <sup>2</sup></h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/artigos_Relaciodos.svg" class="quarto-figure quarto-figure-center" height="600"></p>
+</figure>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>GALICEANU, M.; STRUNZ, W. T. Continuous-time quantum walks on multilayer dendrimer networks. Physical Review E, v. 94, n.&nbsp;2, Aug.&nbsp;2016.</p></li><li id="fn3"><p>JURJIU, A.; BITER, T.-L.; TURCU, F. Dynamics of a polymer network based on dual sierpinski gasket and dendrimer: A theoretical approach. Polymers, v. 9, n.&nbsp;7, p.&nbsp;245, Jun.&nbsp;2017.</p></li></ol></aside></section>
+<section id="motivação-4" class="slide level2">
+<h2>Motivação</h2>
+<h3 id="objetivo-geral">Objetivo Geral</h3>
+<ul>
+<li>Avaliar a eficiência do transporte quântico na rede multicamada Dual Sierpinski Gasket replicado em forma de dendrímero (DSGRSD).</li>
+</ul>
+<h4 id="objetivos-específicos">Objetivos Específicos</h4>
+<ul>
+<li><p>Determinar as probabilidade médias de retorno clássico e quântico.</p></li>
+<li><p>Explorar como a conexão de mais camadas de dendrímeros influência na eficiência do transporte.</p></li>
+<li><p>Comparar os resultados das medidas de probabilidade utilizando o espectro da matriz Laplaciana e os autovalores analíticos.</p></li>
+</ul>
 </section>
 <section id="grafos-e-matriz-laplaciana" class="slide level2">
 <h2>Grafos e Matriz Laplaciana</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/grafo.svg" class="quarto-figure quarto-figure-center" height="400"></p>
+</figure>
+</div>
+<ul>
+<li>Elementos da Matriz Laplaciana <span class="math inline">\(\mathbf{L}\)</span></li>
+</ul>
+<p><span class="math display">\[\small L_{ij} =\begin{cases}
+        \;\;k_i, &amp; i=j, \\
+        -1,&amp;\text{se } i \neq j \text{ e ocorrer ligação entre os vértices } i \text{ e } j ,\\
+        \;\;\;0,&amp; \text{caso contrário}.\end{cases}\]</span></p>
+<p>Obs.: também pode ser chamada de Matriz Conectividade <span class="math inline">\(\mathbf{A}\)</span>.</p>
+</div><div class="column">
+<ul>
+<li>Grafo Estrela</li>
+</ul>
+<p><span class="math display">\[\mathbf{L}=\begin{pmatrix}1&amp;-1&amp;0&amp;0\\
+-1&amp;3&amp;-1&amp;-1\\
+0&amp;-1&amp;1&amp;0\\
+0&amp;-1&amp;0&amp;1\\\end{pmatrix}\]</span></p>
+<ul>
+<li>Grafo Triangular</li>
+</ul>
+<p><span class="math display">\[\mathbf{L}=\begin{pmatrix} 2&amp;-1&amp;-1\\
+-1&amp;2&amp;-1\\
+-1&amp;-1&amp;2\\\end{pmatrix}\]</span></p>
+</div>
+</div>
 </section>
 <section id="rede-multicamada-dsgrsd" class="slide level2">
 <h2>Rede Multicamada DSGRSD</h2>
@@ -422,34 +537,320 @@ Geyson Maquiné Batalha <br> <br> Orientador: Dr.&nbsp;Mircea Daniel Galicenau
 </section>
 <section id="espectro-de-autovalores" class="slide level2">
 <h2>Espectro de Autovalores</h2>
-<h3 id="espectro-da-matriz-laplaciana">Espectro da Matriz Laplaciana</h3>
+<h3 id="matriz-laplaciana">Matriz Laplaciana</h3>
+<p><span class="math display">\[L_{ij}\mathbf{w}_i=\lambda_i\mathbf{w}_i\]</span></p>
+<ul>
+<li><p><span class="math inline">\(\lambda_i \in \mathbb{R}\)</span> e segue a ordem <span class="math inline">\(0=\lambda_1\leq\lambda_2\leq \dots\leq \lambda_{N}\)</span></p></li>
+<li><p><span class="math inline">\(\mathbf{w}_i\)</span> é ortonormal</p></li>
+</ul>
+<h3 id="rede-multicamada-dsgrsd-2">Rede Multicamada DSGRSD</h3>
+<p><span class="math display">\[\small\Lambda_j=2-2\cos\left(\dfrac{j\pi}{L}\right)+\lambda_i, \text{ para }j=0,1,2,\ldots,L-1 \text{ e } i=1,\ldots,N \]</span></p>
+<div class="columns">
+<div class="column" style="font-size:25px; width=50%">
+<ul>
+<li><p>Dendrímero</p>
+<p><span class="math display">\[\small\lambda_k^{(s)}=3-2\sqrt{2} \cos(\psi_k),\text{ para }k=1,\ldots,g_d \text{ e } \psi_k\neq 0 \]</span></p>
+<ul>
+<li>Autovalores Não-degenerados (Simétrico)</li>
+</ul>
+<p><span class="math display">\[\small -\sqrt{2}\sin[(g_d+1)\psi_k]=\sin(g_d\psi_k)\]</span></p>
+<ul>
+<li>Autovalores Degenerados (Assimétrico)</li>
+</ul>
+<p><span class="math display">\[\small\sin[(g_d+1-m)\psi_k]=\sqrt{2}\sin[(g_d-m)\psi_k]\]</span></p></li>
+</ul>
+</div><div class="column" style="font-size:25px; width=50%">
+<ul>
+<li><p>Fractal Dual Sierpinski Gasket</p>
+<p><span class="math display">\[\lambda_{\pm}^{(g_d,g_s)}=\dfrac{5+\pm \sqrt{25-4\cdot\lambda^{(g_d,g_{s}-1)}}}{2}.\]</span></p></li>
+</ul>
+</div>
+</div>
 </section>
-<section id="caminhadas-aleatórias-de-tempo-contínuo-ctrw" class="slide level2">
-<h2>Caminhadas Aleatórias de Tempo Contínuo (CTRW)</h2>
-</section>
-<section id="caminhadas-quânticas-de-tempo-contínuo-ctqw" class="slide level2">
-<h2>Caminhadas Quânticas de Tempo Contínuo (CTQW)</h2>
+<section id="medidas-de-probabilidade" class="slide level2">
+<h2>Medidas de Probabilidade</h2>
+<div class="columns">
+<div class="column" style="font-size:23px; width=50%">
+<h3 id="caminhadas-aleatórias-de-tempo-contínuo-ctrw">Caminhadas Aleatórias de Tempo Contínuo (CTRW)</h3>
+<ul>
+<li>Probabilidade de Transição Clássica</li>
+</ul>
+<p><span class="math display">\[\small p_{a,b}(t)=\sum_{n=1}^Ne^{- \lambda_n t}\langle b|w_n\rangle\langle w_n|a\rangle\]</span></p>
+<ul>
+<li>Probabilidade Média de Retorno Clássico</li>
+</ul>
+<p><span class="math display">\[\small\bar{p}(t)=\dfrac{1}{N}\sum_{a=1}^Np_{a,a}(t)\]</span></p>
+<p><span class="math display">\[\small \bar{p}(t)= \dfrac{1}{N}\sum_{n=1}^Ne^{- \lambda_n t}\]</span></p>
+<ul>
+<li>No limite ao longo do tempo</li>
+</ul>
+<p><span class="math display">\[\lim_{t\rightarrow \infty}\bar{p}(t)=\dfrac{1}{N}\]</span></p>
+</div><div class="column" style="font-size:23px; width=50%">
+<h3 id="caminhadas-quânticas-de-tempo-contínuo-ctqw">Caminhadas Quânticas de Tempo Contínuo (CTQW)</h3>
+<ul>
+<li>Probabilidade de Transição Quântica</li>
+</ul>
+<p><span class="math display">\[\small \pi_{a,b}(t)=\left|\sum_{n=1}^Ne^{-i\lambda_n t}\langle b|w_n\rangle\langle w_n|a\rangle\right|^2\]</span></p>
+<ul>
+<li>Probabilidade Média de Retorno Quântico</li>
+</ul>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">1</a></li><li><a href="#tabset-1-2">2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<p><span class="math display">\[\small \bar{\pi}(t)=\dfrac{1}{N}\sum_{a=1}^N\pi_{a,a}(t)\]</span></p>
+<p><span class="math display">\[\small\bar{\pi}(t)=\dfrac{1}{N}\sum_{a=1}^N\left|\sum_{n=1}^Ne^{-i\lambda_n t}\langle a|w_n\rangle\langle w_n|a\rangle\right|^2\]</span></p>
+</div>
+<div id="tabset-1-2">
+<p><span class="math inline">\(\blacktriangleright\)</span> Limite Inferior</p>
+<p><span class="math display">\[\small|\bar{\alpha}(t)|^2=\left|\dfrac{1}{N}\sum_{n=1}^Ne^{-i\lambda_n t}\right|^2\]</span></p>
+</div>
+</div>
+</div>
+<ul>
+<li>Valor Médio ao longo do tempo</li>
+</ul>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">1</a></li><li><a href="#tabset-2-2">2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<p><span class="math display">\[\small\bar{\chi}\equiv\dfrac{1}{N}\sum_{a=1}^N\left[\sum_{n=1}^N\sum_{m=1}^N\delta_{\lambda_n,\lambda_m}|\langle w_n|a\rangle|^2|\langle w_m|a\rangle|^2\right] \begin{cases}\bar{\chi}=0, \text{ é eficiente}\\
+\bar{\chi}=1, \text{ é ineficiente}\end{cases}\]</span></p>
+</div>
+<div id="tabset-2-2">
+<p><span class="math inline">\(\blacktriangleright\)</span> Limite Inferior</p>
+<p><span class="math display">\[\small\bar{\chi}^*\equiv\dfrac{1}{N^2}\sum_{n=1}^N\sum_{m=1}^N\delta_{\lambda_n,\lambda_m}\begin{cases}\bar{\chi}^*=0, \text{ é eficiente}\\
+\bar{\chi}^*=1, \text{ é ineficiente}\end{cases}\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="procedimentos" class="slide level2">
 <h2>Procedimentos</h2>
+<h3 id="implementação-computacional">Implementação Computacional</h3>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/etapas.svg" class="quarto-figure quarto-figure-center" height="420"></p>
+</figure>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/julia.svg" class="quarto-figure quarto-figure-center" height="400"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>Gerações Escolhidas:</p>
+<ul>
+<li><span class="math inline">\(g_s=3\)</span>, <span class="math inline">\(g_d=1\)</span>, <span class="math inline">\(L=1\)</span></li>
+<li><span class="math inline">\(g_s=1\)</span>, <span class="math inline">\(g_d=3\)</span>, <span class="math inline">\(L=1\)</span></li>
+<li><span class="math inline">\(g_s=1\)</span>, <span class="math inline">\(g_d=1\)</span>, <span class="math inline">\(L=3\)</span></li>
+<li><span class="math inline">\(g_s=2\)</span>, <span class="math inline">\(g_d=2\)</span>, <span class="math inline">\(L=2\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="procedimentos-1" class="slide level2">
+<h2>Procedimentos</h2>
+<h3 id="rotulação-dos-nós">Rotulação dos nós</h3>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Rede Multi-hierárquica</a></li><li><a href="#tabset-3-2">Rede Multicamada DSGRSD</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<figcaption>Ilustração da disposição dos nós do fractal Dual Sierpinki Gasket na geração <span class="math inline">\(g_s=2\)</span>, cada nó é rotulado com número distinto com intuito de descrever a topologia da rede através da matriz Laplaciana. Neste caso, a extremidade superior do triângulo base é 1 e as inferiores serão 2 e 3.</figcaption>
+<p><img data-src="img/triangulo.svg" height="500"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<figcaption>Rede Multi-hierárquica com nós enumerados, observa-se que cada extremidade conecta-se a outra estrutura em ordem crescente seguindo o sentido anti-horário.</figcaption>
+<p><img data-src="img/rede_multihierarquica.svg" height="600"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/rede_multicamadas.svg" class="quarto-figure quarto-figure-center" height="650"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="resultados-parciais" class="slide level2">
 <h2>Resultados Parciais</h2>
+<h3 id="probabilidade-média-de-retorno">Probabilidade Média de Retorno</h3>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Clássico</a></li><li><a href="#tabset-4-2">Quântico</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<div style="font-size:20px;">
+<p>Gráficos da probabilidade média de retorno <span class="math inline">\(\bar{p}(t)\)</span> para uma caminhada aleatória clássica. No limite ao longo do tempo, a probabilidade decai no valor de equipartição <span class="math inline">\(1/N\)</span>, no qual o valor de <span class="math inline">\(N\)</span> para as gerações (<span class="math inline">\(g_s=3\)</span>, <span class="math inline">\(g_d=1\)</span>, <span class="math inline">\(L=1\)</span>), (<span class="math inline">\(g_s=1\)</span>, <span class="math inline">\(g_d=3\)</span>, <span class="math inline">\(L=1\)</span>), (<span class="math inline">\(g_s=1\)</span>, <span class="math inline">\(g_d=1\)</span>, <span class="math inline">\(L=3\)</span>), (<span class="math inline">\(g_s=2\)</span>, <span class="math inline">\(g_d=2\)</span>, <span class="math inline">\(L=2\)</span>) serão respectivamente 108, 66, 36 e 180. A direta, temos os resultados oriundos dos autovalores da matriz Laplaciana e na esquerda são obtidos analiticamente.</p>
+</div>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/prob_classica_laplaciana.jpg" class="quarto-figure quarto-figure-center" width="900"></p>
+</figure>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/prob_classica_analitica.jpg" class="quarto-figure quarto-figure-center" width="900"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2">
+<div style="font-size:20px;">
+<p>Gráficos da probabilidade média de retorno quântico <span class="math inline">\(\bar{\pi}(t)\)</span> e seu limite inferior <span class="math inline">\(|\bar{\alpha}(t)|^2\)</span>.</p>
+</div>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/prob_quantica_laplaciana.jpg" class="quarto-figure quarto-figure-center" width="900"></p>
+</figure>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/prob_quantica_analitica.jpg" class="quarto-figure quarto-figure-center" width="900"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="resultados-parciais-1" class="slide level2">
+<h2>Resultados Parciais</h2>
+<h3 id="eficiência-do-transporte">Eficiência do Transporte</h3>
+<div style="font-size:20px;">
+<p>Representação gráfica do valor médio <span class="math inline">\(\bar{\chi}\)</span> referente ao espectro da matriz Laplaciana e o limite inferior <span class="math inline">\(\bar{\chi}^*\)</span> com os autovalores analíticos.</p>
+</div>
+
+<img data-src="img/valor_medio.jpg" class="quarto-figure quarto-figure-center r-stretch" width="300"></section>
+<section id="resultados-parciais-2" class="slide level2">
+<h2>Resultados Parciais</h2>
+<h3 id="espectro-de-autovalores-1">Espectro de Autovalores</h3>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/autovalores_espectro_laplaciano.jpg" class="quarto-figure quarto-figure-center" style="width:100em"></p>
+</figure>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/autovalores_espectro_analitico.jpg" class="quarto-figure quarto-figure-center" style="width:100em"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="considerações-finais" class="slide level2">
 <h2>Considerações Finais</h2>
+<ul>
+<li><p>O aumento da geração do fractal é um fator determinante para a melhora dos transportes clássico e quântico.</p></li>
+<li><p>A ordem da eficiência do transporte foram semelhantes no caso clássico e quântico.</p></li>
+<li><p>A geração (<span class="math inline">\(g_s=2\)</span>, <span class="math inline">\(g_d=2\)</span>, <span class="math inline">\(L=2\)</span>) teve o melhor transporte e (<span class="math inline">\(g_s=1\)</span>, <span class="math inline">\(g_d=3\)</span>, <span class="math inline">\(L=1\)</span>) o pior.</p></li>
+<li><p>A alta degenerecência do fractal contribuiu para que os limites inferiores se aproximem de <span class="math inline">\(\bar{\chi}\)</span>.</p></li>
+<li><p>Mesmo com as variações dos autolovares da matriz Laplaciana e os analíticos, o desempenho de cada transporte foi semelhante.</p></li>
+<li><p>Posteriormente, veremos os efeitos de localização através de <span class="math inline">\(\pi_{a,b}\)</span>, e também, vamos avaliar se a remoção de arestas especificas entre as camadas melhoram o desempenho transporte.</p></li>
+</ul>
 </section>
 <section id="cronograma" class="slide level2">
 <h2>Cronograma</h2>
+<div style="font-size:20px;">
+<h3 id="º-semestre">2022 - 2º Semestre</h3>
+<ul>
+<li>Aproveitamento de disciplinas, definição do tema e levantamento bibliográfico.</li>
+</ul>
+<h3 id="º-semestre-1">2023 - 1º Semestre</h3>
+<ul>
+<li>Construção da matriz Laplaciana da rede multi-hierárquica.Exame e obtenção do certificado de proficiência. Disciplina cursada: Redes Complexas.</li>
+</ul>
+<h3 id="º-semestre-2">2023 - 2º Semestre</h3>
+<ul>
+<li>Implementação dos autovalores analíticos numericamente. Escrita do Pré-projeto para Qualificação.</li>
+</ul>
+<h3 id="º-semestre-3">2024 - 1º Semestre</h3>
+<ul>
+<li>Exame de qualificação.</li>
+</ul>
+<h3 id="º-semestre-4">2024 - 2º Semestre</h3>
+<ul>
+<li>Verificação dos resultados. Submissão de artigo.</li>
+</ul>
+<h3 id="º-semestre-5">2025 - 1º Semestre</h3>
+<ul>
+<li>Submissão de artigo e eventuais correções ou complementos para o texto final.</li>
+</ul>
+<h3 id="º-semestre-6">2025 - 2º Semestre</h3>
+<p>Escrita do texto final da Tese de Doutorado.</p>
+<h3 id="º-semestre-7">2026 - 1º Semestre</h3>
+<p>Defesa da Tese de Doutorado.</p>
+</div>
 </section>
-<section id="referências" class="slide level2">
+<section id="referências" class="slide level2 smaller scrollable">
 <h2>Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" style="margin:25px !important;" data-entry-spacing="0" role="list">
+<div id="ref-Aharonov_1993" class="csl-entry" role="listitem">
+Aharonov, Y., L. Davidovich, and N. Zagury. 1993. <span>“Quantum Random Walks.”</span> <em>Physical Review A</em> 48 (2): 1687–90. <a href="https://doi.org/10.1103/physreva.48.1687">https://doi.org/10.1103/physreva.48.1687</a>.
+</div>
+<div id="ref-Dar_zs_2014" class="csl-entry" role="listitem">
+Darázs, Zoltán, Anastasiia Anishchenko, Tamás Kiss, Alexander Blumen, and Oliver Mülken. 2014. <span>“Transport Properties of Continuous-Time Quantum Walks on Sierpinski Fractals.”</span> <em>Physical Review E</em> 90 (3). <a href="https://doi.org/10.1103/physreve.90.032113">https://doi.org/10.1103/physreve.90.032113</a>.
+</div>
+<div id="ref-Farhi_1998" class="csl-entry" role="listitem">
+Farhi, Edward, and Sam Gutmann. 1998. <span>“Quantum Computation and Decision Trees.”</span> <em>Physical Review A</em> 58 (2): 915–28. <a href="https://doi.org/10.1103/physreva.58.915">https://doi.org/10.1103/physreva.58.915</a>.
+</div>
+<div id="ref-Galiceanu_2016" class="csl-entry" role="listitem">
+Galiceanu, Mircea, and Walter T. Strunz. 2016. <span>“Continuous-Time Quantum Walks on Multilayer Dendrimer Networks.”</span> <em>Physical Review E</em> 94 (2). <a href="https://doi.org/10.1103/physreve.94.022307">https://doi.org/10.1103/physreve.94.022307</a>.
+</div>
+<div id="ref-Jurjiu_2017" class="csl-entry" role="listitem">
+Jurjiu, Aurel, Teodor-Lucian Biter, and Flaviu Turcu. 2017. <span>“Dynamics of a Polymer Network Based on Dual Sierpinski Gasket and Dendrimer: A Theoretical Approach.”</span> <em>Polymers</em> 9 (7): 245. <a href="https://doi.org/10.3390/polym9070245">https://doi.org/10.3390/polym9070245</a>.
+</div>
+<div id="ref-Jurjiu_2018" class="csl-entry" role="listitem">
+Jurjiu, Aurel, Flaviu Turcu, and Mircea Galiceanu. 2018. <span>“Dynamics of a Complex Multilayer Polymer Network: Mechanical Relaxation and Energy Transfer.”</span> <em>Polymers</em> 10 (2): 164. <a href="https://doi.org/10.3390/polym10020164">https://doi.org/10.3390/polym10020164</a>.
+</div>
+<div id="ref-prabhakar2021exploration" class="csl-entry" role="listitem">
+Prabhakar, Nikhilesh, and L. Jani Anbarasi. 2021. <span>“Exploration of the Global Air Transport Network Using Social Network Analysis.”</span> <em>Social Network Analysis and Mining</em> 11 (1): null–. https://doi.org/<a href="https://doi.org/10.1007/s13278-021-00735-1">https://doi.org/10.1007/s13278-021-00735-1</a>.
+</div>
+<div id="ref-Qiang2024" class="csl-entry" role="listitem">
+Qiang, Xiaogang, Shixin Ma, and Haijing Song. 2024. <span>“Review on Quantum Walk Computing: Theory, Implementation, and Application.”</span> <a href="http://arxiv.org/pdf/2404.04178">http://arxiv.org/pdf/2404.04178</a>.
+</div>
+<div id="ref-silva2023impact" class="csl-entry" role="listitem">
+Silva, Giovanna Cavali, and Evandro Marcos Saidel Ribeiro. 2023. <span>“The Impact of Brazil’s Transport Network on the Spread of COVID-19.”</span> <em>Scientific Reports</em> 13 (1): null–. https://doi.org/<a href="https://doi.org/10.1038/s41598-022-27139-1">https://doi.org/10.1038/s41598-022-27139-1</a>.
+</div>
+<div id="ref-tu2000how" class="csl-entry" role="listitem">
+Tu, Yuhai. 2000. <span>“How Robust Is the Internet?”</span> <em>Nature</em> 406 (6794): 353–54. https://doi.org/<a href="https://doi.org/10.1038/35019222">https://doi.org/10.1038/35019222</a>.
+</div>
+</div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
 </section>
+
     </div>
   </div>
 
@@ -460,6 +861,7 @@ Geyson Maquiné Batalha <br> <br> Orientador: Dr.&nbsp;Mircea Daniel Galicenau
   <script src="Qualificacao_AP_main_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="Qualificacao_AP_main_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="Qualificacao_AP_main_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Qualificacao_AP_main_files/libs/revealjs/plugin/reveal-pointer/pointer.js"></script>
   <script src="Qualificacao_AP_main_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -481,6 +883,7 @@ Geyson Maquiné Batalha <br> <br> Orientador: Dr.&nbsp;Mircea Daniel Galicenau
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'pointer': {"key":"q","color":"#23373B","pointerSize":20,"alwaysVisible":false},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -651,7 +1054,7 @@ Geyson Maquiné Batalha <br> <br> Orientador: Dr.&nbsp;Mircea Daniel Galicenau
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealPointer, QuartoSupport,
 
           RevealMath,
           RevealNotes,

@@ -5,10 +5,9 @@ institute:
     - Pró-Reitoria de Pesquisa e Pós-Graduação
     - Programa de Pós-Graduação em Física
 author:
-    - "Geyson Maquiné Batalha <br> <br> Orientador: Dr. Mircea Daniel Galicenau"
+    - "Geyson Maquiné Batalha <br> <br> Orientador: Dr. Mircea Daniel Galiceanu"
     
 bibliography: ref.bib
-csl: abnt.csl
 format: 
     revealjs:
         slide-number: c/t
@@ -18,6 +17,11 @@ format:
         fig-cap-location: top
         code-fold: true
         margin: 0
+        pointer:
+            pointerSize: 20
+            color: '#23373B'
+revealjs-plugins:
+    - pointer
 ---
 
 
@@ -28,8 +32,7 @@ format:
 - Grafos e Matriz Laplaciana
 - Rede Multicamada DSGRSD
 - Espectro de Autovalores
-- Caminhadas Aleatórias de Tempo Contínuo (CTRW)
-- Caminhadas Quânticas de Tempo Contínuo (CTQW)
+- Medidas de Probabilidade
 - Procedimentos
 - Resultados Parciais 
 - Considerações Finais
@@ -40,11 +43,20 @@ format:
 {{< include _grafos.qmd >}}
 {{< include _rede_multi.qmd >}}
 {{< include _espectro.qmd >}}
-{{< include _CTRW.qmd >}}
-{{< include _CTQW.qmd >}}
+{{< include _medidas.qmd >}}
 {{< include _procedimentos.qmd >}}
 {{< include _resultados.qmd >}}
 {{< include _consideracao_final.qmd >}}
 {{< include _cronograma.qmd >}}
 
+
+---
+nocite: |
+  @*
+
+---
+
 ## Referências
+
+::: {#refs style="margin:25px !important;"}
+:::

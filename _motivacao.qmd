@@ -1,6 +1,57 @@
 ## Motivação
 
-asdaaff
+### Redes de Transporte
+
+![](img/redes_transporte.svg){height=700px fig-align="center"}
 
 ## Motivação
-dsdsd
+
+### Modelo de Caminhadas
+![](img/caminhadas.svg){height=450px fig-align="center"}
+
+#### Caminhadas Quânticas
+
+:::: {.columns}
+::: {.column}
+
+- Tempo Discreto 
+    + @Aharonov_1993
+    + Espaço moeda e Espaço posição
+:::
+::: {.column}
+
+- Tempo Contínuo
+    + @Farhi_1998
+    + $U(t)=e^{-i\mathbf{H}t}$
+
+:::
+:::: 
+
+## Motivação
+
+### Aplicações
+:::{style="text-align:center; font-size:25px;"}
+![](img/QW_app.png){height=600px fig-align="center"}
+
+Fonte: @Qiang2024.^[QIANG, X.; MA, S.; SONG, H. Review on quantum walk computing: Theory, implementation, and application. 2024]
+:::
+
+
+## Motivação
+
+### Trabalhos Relacionados^[GALICEANU, M.; STRUNZ, W. T. Continuous-time quantum walks on multilayer dendrimer networks. Physical Review E, v. 94, n. 2, Aug. 2016.] ^[JURJIU, A.; BITER, T.-L.; TURCU, F. Dynamics of a polymer network based on dual sierpinski gasket and dendrimer: A theoretical approach. Polymers, v. 9, n. 7, p. 245, Jun. 2017.]
+
+![](img/artigos_Relaciodos.svg){height=600px fig-align="center"}
+
+## Motivação
+### Objetivo Geral
+
+- Avaliar a eficiência do transporte quântico na rede multicamada Dual Sierpinski Gasket replicado em forma de dendrímero (DSGRSD).
+
+#### Objetivos Específicos
+
+- Determinar as probabilidade médias de retorno clássico e quântico.
+
+- Explorar como a conexão de mais camadas de dendrímeros influência na eficiência do transporte.
+
+- Comparar os resultados das medidas de probabilidade utilizando o espectro da matriz Laplaciana e os autovalores analíticos.

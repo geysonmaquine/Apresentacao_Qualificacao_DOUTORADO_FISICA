@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>espectro</title>
+<title>consideracao_final</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,17 +23,46 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="_espectro_files/libs/clipboard/clipboard.min.js"></script>
-<script src="_espectro_files/libs/quarto-html/quarto.js"></script>
-<script src="_espectro_files/libs/quarto-html/popper.min.js"></script>
-<script src="_espectro_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="_espectro_files/libs/quarto-html/anchor.min.js"></script>
-<link href="_espectro_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="_espectro_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="_espectro_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="_espectro_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="_espectro_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="_consideracao_final_files/libs/clipboard/clipboard.min.js"></script>
+<script src="_consideracao_final_files/libs/quarto-html/quarto.js"></script>
+<script src="_consideracao_final_files/libs/quarto-html/popper.min.js"></script>
+<script src="_consideracao_final_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="_consideracao_final_files/libs/quarto-html/anchor.min.js"></script>
+<link href="_consideracao_final_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="_consideracao_final_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="_consideracao_final_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="_consideracao_final_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="_consideracao_final_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -46,11 +75,15 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="espectro-de-autovalores" class="level2">
-<h2 class="anchored" data-anchor-id="espectro-de-autovalores">Espectro de Autovalores</h2>
-<section id="espectro-da-matriz-laplaciana" class="level3">
-<h3 class="anchored" data-anchor-id="espectro-da-matriz-laplaciana">Espectro da Matriz Laplaciana</h3>
-</section>
+<section id="considerações-finais" class="level2">
+<h2 class="anchored" data-anchor-id="considerações-finais">Considerações Finais</h2>
+<ul>
+<li><p>O aumento da geração do fractal é um fator determinante para a melhora dos transportes clássico e quântico.</p></li>
+<li><p>A ordem da eficiência do transporte foram semelhantes no caso clássico e quântico.</p></li>
+<li><p>A geração (<span class="math inline">\(g_s=2\)</span>, <span class="math inline">\(g_d=2\)</span>, <span class="math inline">\(L=2\)</span>) teve o melhor transporte e (<span class="math inline">\(g_s=1\)</span>, <span class="math inline">\(g_d=3\)</span>, <span class="math inline">\(L=1\)</span>) o pior.</p></li>
+<li><p>A alta degenerecência do fractal contribui para que os limites inferiores se aproximem de <span class="math inline">\(\bar{\chi}\)</span>.</p></li>
+<li><p>Posteriormente, veremos os efeitos de localização através de <span class="math inline">\(\pi_{a,b}\)</span>, e também, vamos avaliar se a remoção de arestas especificas entre as camadas melhoram o transporte.</p></li>
+</ul>
 </section>
 
 </main>

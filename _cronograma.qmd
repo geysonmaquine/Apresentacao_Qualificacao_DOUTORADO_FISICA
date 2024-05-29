@@ -1,1 +1,34 @@
 ## Cronograma
+:::{style="font-size:20px;"}
+### 2022 - 2º Semestre
+
+- Aproveitamento de disciplinas, definição do tema e levantamento bibliográfico.
+
+### 2023 - 1º Semestre
+- Construção da matriz Laplaciana da rede  multi-hierárquica.Exame e obtenção do certificado de proficiência. Disciplina cursada: Redes Complexas. 
+
+### 2023 - 2º Semestre
+- Implementação dos autovalores analíticos numericamente. Escrita do Pré-projeto para Qualificação.
+
+
+### 2024 - 1º Semestre
+
+- Exame de qualificação.
+
+### 2024 - 2º Semestre
+- Verificação dos resultados. Submissão de artigo.
+
+
+### 2025 - 1º Semestre
+
+- Submissão de artigo e eventuais correções ou complementos para o texto final.
+
+### 2025 - 2º Semestre
+Escrita do texto final da Tese de Doutorado. 
+
+### 2026 - 1º Semestre
+Defesa da Tese de Doutorado.
+
+
+
+:::

@@ -1,3 +1,37 @@
 ## Espectro de Autovalores
 
-### Espectro da Matriz Laplaciana
+###  Matriz Laplaciana
+
+$$L_{ij}\mathbf{w}_i=\lambda_i\mathbf{w}_i$$
+
+- $\lambda_i \in \mathbb{R}$ e segue a ordem $0=\lambda_1\leq\lambda_2\leq \dots\leq \lambda_{N}$
+
+- $\mathbf{w}_i$ é ortonormal
+
+
+### Rede Multicamada DSGRSD
+
+
+$$\small\Lambda_j=2-2\cos\left(\dfrac{j\pi}{L}\right)+\lambda_i, \text{ para }j=0,1,2,\ldots,L-1 \text{ e } i=1,\ldots,N $$
+
+:::: {.columns}
+::: {.column style="font-size:25px; width=50%"}
+- Dendrímero
+
+    $$\small\lambda_k^{(s)}=3-2\sqrt{2} \cos(\psi_k),\text{ para }k=1,\ldots,g_d \text{ e } \psi_k\neq 0 $$
+
+    + Autovalores Não-degenerados   (Simétrico)
+
+    $$\small -\sqrt{2}\sin[(g_d+1)\psi_k]=\sin(g_d\psi_k)$$
+        
+    + Autovalores Degenerados (Assimétrico)
+
+    $$\small\sin[(g_d+1-m)\psi_k]=\sqrt{2}\sin[(g_d-m)\psi_k]$$
+:::
+
+::: {.column style="font-size:25px; width=50%"}
+- Fractal Dual Sierpinski Gasket
+
+    $$\lambda_{\pm}^{(g_d,g_s)}=\dfrac{5+\pm \sqrt{25-4\cdot\lambda^{(g_d,g_{s}-1)}}}{2}.$$
+:::
+::::

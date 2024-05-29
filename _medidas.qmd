@@ -1,0 +1,70 @@
+## Medidas de Probabilidade
+
+:::: {.columns}
+
+::: {.column style="font-size:23px; width=50%"}
+
+### Caminhadas Aleatórias de Tempo Contínuo (CTRW)
+
+- Probabilidade de Transição Clássica
+
+$$\small p_{a,b}(t)=\sum_{n=1}^Ne^{- \lambda_n t}\langle b|w_n\rangle\langle w_n|a\rangle$$
+
+- Probabilidade Média de Retorno Clássico
+
+$$\small\bar{p}(t)=\dfrac{1}{N}\sum_{a=1}^Np_{a,a}(t)$$
+
+$$\small \bar{p}(t)= \dfrac{1}{N}\sum_{n=1}^Ne^{- \lambda_n t}$$
+
+- No limite ao longo do tempo
+
+$$\lim_{t\rightarrow \infty}\bar{p}(t)=\dfrac{1}{N}$$
+
+:::
+
+::: {.column style="font-size:23px; width=50%"}
+
+### Caminhadas Quânticas de Tempo Contínuo (CTQW)
+
+- Probabilidade de Transição Quântica
+
+$$\small \pi_{a,b}(t)=\left|\sum_{n=1}^Ne^{-i\lambda_n t}\langle b|w_n\rangle\langle w_n|a\rangle\right|^2$$
+
+- Probabilidade Média de Retorno Quântico
+
+::: {.panel-tabset}
+
+### 1
+
+$$\small \bar{\pi}(t)=\dfrac{1}{N}\sum_{a=1}^N\pi_{a,a}(t)$$
+
+$$\small\bar{\pi}(t)=\dfrac{1}{N}\sum_{a=1}^N\left|\sum_{n=1}^Ne^{-i\lambda_n t}\langle a|w_n\rangle\langle w_n|a\rangle\right|^2$$
+
+### 2
+ $\blacktriangleright$ Limite Inferior
+
+ $$\small|\bar{\alpha}(t)|^2=\left|\dfrac{1}{N}\sum_{n=1}^Ne^{-i\lambda_n t}\right|^2$$
+
+:::
+
+- Valor Médio ao longo do tempo
+
+::: {.panel-tabset}
+
+### 1
+
+$$\small\bar{\chi}\equiv\dfrac{1}{N}\sum_{a=1}^N\left[\sum_{n=1}^N\sum_{m=1}^N\delta_{\lambda_n,\lambda_m}|\langle w_n|a\rangle|^2|\langle w_m|a\rangle|^2\right] \begin{cases}\bar{\chi}=0, \text{ é eficiente}\\
+\bar{\chi}=1, \text{ é ineficiente}\end{cases}$$
+
+### 2
+ $\blacktriangleright$ Limite Inferior
+
+
+
+$$\small\bar{\chi}^*\equiv\dfrac{1}{N^2}\sum_{n=1}^N\sum_{m=1}^N\delta_{\lambda_n,\lambda_m}\begin{cases}\bar{\chi}^*=0, \text{ é eficiente}\\
+\bar{\chi}^*=1, \text{ é ineficiente}\end{cases}$$
+
+:::
+:::
+
+::::

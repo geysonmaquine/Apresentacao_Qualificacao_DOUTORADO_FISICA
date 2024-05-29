@@ -1,1 +1,44 @@
 ## Procedimentos
+
+
+### Implementação Computacional
+:::: {.columns}
+::: {.column}
+![](img/etapas.svg){height=420px fig-align="center"}
+:::
+::: {.column}
+![](img/julia.svg){height=400px fig-align="center"}
+:::
+::::
+
+- Gerações Escolhidas:
+
+    + $g_s=3$, $g_d=1$, $L=1$
+    + $g_s=1$, $g_d=3$, $L=1$
+    + $g_s=1$, $g_d=1$, $L=3$
+    + $g_s=2$, $g_d=2$, $L=2$
+
+
+
+## Procedimentos
+
+
+### Rotulação dos nós 
+:::{.panel-tabset}
+
+### Rede Multi-hierárquica
+:::: {.columns}
+::: {.column width="50%"}
+![Ilustração da disposição dos nós do fractal Dual Sierpinki Gasket na geração $g_s=2$, cada nó é rotulado com número distinto com intuito de descrever a topologia da rede através da matriz Laplaciana. Neste caso, a extremidade superior do triângulo base é 1 e as inferiores serão 2 e 3.](img/triangulo.svg){height=500px fig-alt="center"}
+:::
+::: {.column width="50%"}
+![Rede Multi-hierárquica com nós enumerados, observa-se que cada extremidade conecta-se a outra estrutura em ordem crescente seguindo o sentido anti-horário.](img/rede_multihierarquica.svg){height=600px fig-alt="center"}
+:::
+::::
+
+### Rede Multicamada DSGRSD
+
+
+![](img/rede_multicamadas.svg){height=650px fig-align="center"}
+
+:::
