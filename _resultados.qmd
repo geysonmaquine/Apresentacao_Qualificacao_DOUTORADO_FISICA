@@ -1,5 +1,11 @@
 ## Resultados Parciais
 
+### Probabilidade de Transição Quântica
+
+![](img/mosaico.mp4){height=700px fig-align="center" loop="true"}
+
+## Resultados Parciais
+
 
 ### Probabilidade Média de Retorno
 

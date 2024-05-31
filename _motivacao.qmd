@@ -39,9 +39,9 @@ Fonte: @Qiang2024.^[QIANG, X.; MA, S.; SONG, H. Review on quantum walk computing
 
 ## Motivação
 
-### Trabalhos Relacionados^[GALICEANU, M.; STRUNZ, W. T. Continuous-time quantum walks on multilayer dendrimer networks. Physical Review E, v. 94, n. 2, Aug. 2016.] ^[JURJIU, A.; BITER, T.-L.; TURCU, F. Dynamics of a polymer network based on dual sierpinski gasket and dendrimer: A theoretical approach. Polymers, v. 9, n. 7, p. 245, Jun. 2017.]
+### Trabalhos Relacionados^[GALICEANU, M.; STRUNZ, W. T. Continuous-time quantum walks on multilayer dendrimer networks. Physical Review E, v. 94, n. 2, Aug. 2016.] ^[JURJIU, A.; BITER, T.-L.; TURCU, F. Dynamics of a polymer network based on dual sierpinski gasket and dendrimer: A theoretical approach. Polymers, v. 9, n. 7, p. 245, Jun. 2017.] ^[JURJIU, A.; TURCU, F.; GALICEANU, M. Dynamics of a Complex Multilayer Polymer Network: Mechanical Relaxation and Energy Transfer. Polymers, v. 10, n. 2, p. 164, fev. 2018.]
 
-![](img/artigos_Relaciodos.svg){height=600px fig-align="center"}
+![](img/artigos_Relaciodos.svg){height=550px fig-align="center"}
 
 ## Motivação
 
