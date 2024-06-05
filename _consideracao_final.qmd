@@ -10,4 +10,4 @@
 
 - Mesmo com as variações  dos autolovares da matriz Laplaciana e os analíticos, o desempenho  de cada transporte foi semelhante.  
 
-- Posteriormente, veremos os efeitos de localização através de $\pi_{a,b}$, e também, vamos avaliar se a remoção de arestas especificas entre as camadas melhoram o desempenho transporte.
+- Posteriormente, veremos os efeitos de localização através de $\pi_{a,b}$ para redes maiores, e também, vamos avaliar se a remoção de arestas especificas entre as camadas melhoram o desempenho transporte.
