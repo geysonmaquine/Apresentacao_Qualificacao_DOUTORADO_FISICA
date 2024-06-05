@@ -19,13 +19,13 @@
 
   
 
-- $g_s=1$, $g_d=3 e $L=1$ (Camada com 66 nós e o Fractal DSG com 3 nós).
+- $g_s=1$, $g_d=3$ e $L=1$ (Camada com 66 nós e o Fractal DSG com 3 nós).
 
     + Efeitos de localização permanece.
 
   
 
-- $g_s=1$, $g_d=1 e $L=3$ (Camada com 12 nós e o Fractal DSG com 3 nós).
+- $g_s=1$, $g_d=1$ e $L=3$ (Camada com 12 nós e o Fractal DSG com 3 nós).
 
     + Efeitos de localização formam blocos e variam entre camadas interna e externa.
 
@@ -33,7 +33,7 @@
 
   
 
-- $g_s=2$, $g_d=2 e $L=2$ (Camada com 90 nós e o Fractal DSG com 9 nós) 
+- $g_s=2$, $g_d=2$ e $L=2$ (Camada com 90 nós e o Fractal DSG com 9 nós) 
     + Simetria de Blocos.
     + Propagação maior.
 
